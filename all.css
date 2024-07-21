@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* -------------------- */
+
+/* googleFont */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* layout */
+.red-f{color:#aa0601;}
+.black-f{color:#000000;}
+.pink-f{color:#fbf2f2;}
+
+.container {
+    a{text-decoration-line:none ;}
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+/* border看範圍隔線 */
+.b{border: 1px solid black;}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+/* flex  */
+.d-flex{display: flex;}
+.jc-c{justify-content:center}
+.jc-sb{justify-content:space-between}
+
+/* container */
+.container{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color:#AA0601;
+}
+
+.column{
+    margin: 0 auto;
+    align-items: center;
+    width: 1296px;
+    flex-wrap: wrap;
+    
+}
+
+.nav a{
+    color:#FFFFFF;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: "Noto Sans TC", sans-serif;
+    padding-right: 32px;
+    padding-left: 32px;
+    /* border: 1px yellow solid;w */
+    
+}
+
+.nav{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.nav{
+    /* border: 1px yellow solid; */
+}
+.nav ul{
+    flex-wrap: wrap;
+    
+}
+.nav-row{
+    
+}
+
+
+/* header針對螢幕寬度小於等於 576px 的裝置 */
+@media (max-width: 576px) {
+    .header{
+        
+    }
+    .column{
+        width: 100%;
+
+    }
+    .nav ul{
+        height: 96px;
+    }
+
+    .nav li{
+        width:50% ;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: #FFFFFF 1px solid;
+    }
+
+    .nav a{
+        font-size: 16px;
+    }
+    .logoIcon img{
+        margin-top: 16px;
+        margin-left: 15px;
+    }
+    .nav{
+        margin-bottom: -25px;
+        padding-top: 15.43px;
+    }
+
+}
+
