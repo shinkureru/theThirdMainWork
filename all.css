@@ -58,9 +58,12 @@ table {
 .red-f{color:#aa0601;}
 .black-f{color:#000000;}
 .pink-f{color:#fbf2f2;}
+.white-f{color:#FFFFFF;}
+.ffeg{font-family: "Roboto", sans-serif;}
+.fftw{font-family: "Noto Sans TC", sans-serif;}
 
-.container {
-    a{text-decoration-line:none ;}
+.container a{
+    text-decoration-line:none
 }
 img {
     max-width: 100%;
@@ -77,6 +80,10 @@ img {
 .d-flex{display: flex;}
 .jc-c{justify-content:center}
 .jc-sb{justify-content:space-between}
+.ai-fe{align-items: flex-end;}
+.fd-c{flex-direction: column;}
+.ai-c{align-items: center;}
+.fw-w{flex-wrap: wrap;}
 
 /* container */
 .container{
@@ -159,3 +166,252 @@ img {
 
 }
 
+/* firstPage>banner */
+
+
+.banner-bg{
+    background-image: url(img/home-header.png);
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+}
+
+.h3{
+    font-size: 36px;
+    line-height: 54px;
+    color: #650300;
+}
+.h2{
+    font-size: 64px;
+    line-height: 96px;
+    color:#650300;
+    font-weight: bold;
+}
+
+.banner-column{
+    padding-top: 296px;
+    padding-bottom: 341px;
+    flex-direction: column;
+    width: 82%;
+}
+
+.banner-btn{
+    background-color: #AA0601;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.banner-btn a{
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+
+/* header>banner針對螢幕寬度小於等於 576px 的裝置 */
+@media (max-width: 576px){
+    .banner-bg{
+        background-image: url(img/home-header-sm.png);
+    }
+    .banner-column{
+        padding-top: 144px;
+        padding-bottom: 192px;
+        width: 95%;
+    }
+
+    .h3{
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .h2{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .banner-btn{
+        margin-top: 8px;
+    }
+}
+
+/* header>projectIdea */
+
+.projectIdea-bg{
+    background-color: #FBF2F2;
+
+}
+
+.h4{
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: bold;
+    color: #650300;
+}
+
+.h5{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: bold;
+    color:#650300;
+    padding-bottom: 8px;
+}
+
+.projectText{
+    font-size: 16px;
+    line-height: 24px;
+}
+.project-column{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.projectList{
+    width: 16.66%;
+    padding: 20px;
+}
+.projectSection ul{
+     margin: 0 auto;
+}
+.projectList img{
+    width: 83px;
+    padding-bottom: 24px;
+}
+
+/* header>projectIdea針對螢幕寬度小於等於 576px 的裝置 */
+@media (max-width: 576px){
+    .projectSection ul{
+        flex-wrap: wrap;
+    }
+    .projectList{
+        width: 100%;
+    }
+    .projectList img{
+        width: 83px;
+        margin-bottom: 10px;
+    }
+    .projectIdea .h4{
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .projectIdea .h5{
+        margin-bottom: 5px;
+    }
+    .projectIdea{
+        padding-top: 40px;
+    }
+    .project-column{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.projectStyle-bg{
+    background-color: #FFFFFF;
+}
+.styleName{
+    color:#AA0601;
+    font-style:italic;
+    font-weight:900;
+    font-size: 48px;
+    line-height: 72px;
+    padding-top: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+.projectStyle-column li{
+    padding-right: 12px;
+    padding-left: 12px;
+}
+.projectStyle{
+    max-width: 100%;
+}
+.projectStyle .h4{
+    padding-bottom: 40px;
+    text-align: center;
+}
+.projectStyle-column{
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom:80px;
+}
+.projectStyle img{
+    width: 416px;
+}
+
+/* header>projectStyle針對螢幕寬度小於等於 576px 的裝置 */
+@media (max-width: 576px){
+    .projectStyle ul{
+        flex-wrap: wrap;
+    }
+    .projectStyle li{
+        padding-bottom: 20px;
+    }
+    .projectStyle .h4{
+        font-size: 24px;
+        line-height: 36px;
+        padding-bottom: 30px;
+    }
+    .projectStyle-column{
+        padding-top: 40px;
+    }
+}
+
+.projectDesign-bg{
+    background-image: url(Img/index-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projectDesign-company img{
+    width: 648px;
+    box-sizing: border-box;
+}
+
+.projectDesign-company .h5{
+    text-align: center;
+    color:#AA0601;
+    font-style:italic;
+    font-weight:900;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    background-color: #FFFFFF;
+
+}
+
+.project-column .h4{
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+/* header>projectDesign針對螢幕寬度小於等於 576px 的裝置 */
+@media (max-width: 576px){
+    .projectDesign-company ul{
+        flex-wrap: wrap;
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+    .projectDesign-company li{
+        margin-top: 24px;
+    }
+    .project-column .h4{
+        padding-bottom: 0px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .projectDesign-bg{
+        background-image: url(Img/index-bg-sm.png);
+        width: 100%;
+    }
+    .project-column{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
