@@ -415,3 +415,78 @@ img {
         padding-bottom: 40px;
     }
 }
+.projectCommand-bg{
+    background-color: #FFFFFF;
+}
+.projectCommand-List ul{
+    max-width: 100%;
+}
+.projectCommand-List{
+    margin-right: -12px;
+    margin-left: -12px;
+}
+
+.projectCommand-List img{
+    width: 306px;
+    box-sizing: border-box;
+}
+
+/* .shadow{
+    box-shadow:#00000029 0px 2px 6px;
+} */
+
+.projectCommand-List li{
+    box-shadow:#00000029 0px 2px 6px;
+    margin-right: 12px;
+    margin-left: 12px;
+    width: 306px;
+}
+
+.projectCommand-Title{
+    text-align: center;
+    padding-bottom: 48px;
+}
+
+.projectCommand-List p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.listDate{
+    font-size: 14px;
+    line-height: 21px;
+    color:#707070;
+    padding-top: 72px;
+}
+
+.listTitle{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+.projectCommand-column{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.projectUl-content{
+    padding: 16px;
+}
+
+/* header>projectCommand針對螢幕寬度小於等於 576px 的裝置 */
+@media (max-width: 576px){
+    .projectCommand-List ul{
+        flex-wrap: wrap;
+        width: 360px;
+    }
+    .projectCommand-List li{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+    .projectCommand-List img{
+        width: 360px;
+    }
+    
+}
